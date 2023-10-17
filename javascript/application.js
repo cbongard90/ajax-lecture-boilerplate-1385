@@ -1,14 +1,15 @@
+import Swal from "sweetalert2";
+
 console.log("Hello from JavaScript!");
-const url = "https://api.github.com/users/dhh"
-console.log('fetch Promise',fetch(url));
+const url = "https://api.github.com/users/dhh";
+console.log("fetch Promise", fetch(url));
 
-
-fetch(url).then((response) => console.log('Response Promise',response.json()));
+fetch(url).then((response) => console.log("Response Promise", response.json()));
 
 fetch(url) // Make the HTTP request
   .then((response) => response.json()) // Wait for the response and parse it as JSON
   .then((data) => {
-    console.log('data Information',data); // Wait for parsing, allowing us to manipulate the data
+    console.log("data Information", data); // Wait for parsing, allowing us to manipulate the data
   });
 
 // const reqresURL = "https://reqres.in";
